@@ -1,0 +1,24 @@
+*{margin:0;padding:0;}
+html{font-family:"Helvetica Neue",Arial,"Microsoft YaHei",sans-serif;}
+/*常用颜色*/
+.gray{color: #a87b4f;}
+.articlecolor{color:#333;}
+/*常用尺寸*/
+.normal{font-size: 4.5rem;}
+.list_title{font-size: 4.2rem;}
+.main_article{font-size: 3.3rem;margin-top: 1.5rem;}
+/*头部信息*/
+header{padding-top: 2rem;display: flex;flex:1;margin:0 auto;width:73rem;}
+/*位置放置中央*/
+.center{text-align: center;}
+/*头部样式*/
+.logo{background-image:url(../image/logo.png);width:8rem;height:10rem;background-size: 100% 100%;}
+.navlist{width:40rem;margin-left: 20rem;display: flex;align-items:center;justify-content:space-between;}
+/*中间扫描二维码*/
+.banner{margin-top: 2rem;display:flex;background:#a87b4f;height: 32rem;align-items:center;justify-content:center;}
+.codeimg img{width:25rem;height: 25rem;}
+/*内容区域*/
+.content{margin:0 auto;width:73rem;}
+.main_content{margin-right: 1rem;}
+.mainlist{display: flex;border-bottom: 2px dashed #ccc;padding-top: 2rem;padding-bottom: 3rem;}
+.listimg,.listimg img{width: 20rem;height: 20rem;}
