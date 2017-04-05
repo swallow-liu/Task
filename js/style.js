@@ -1,9 +1,9 @@
 $(function(){
 	$(".wrap").toggle(function(){
-		$(this).find(".poke_one").addClass("add");
-		$(this).find(".poke_two").addClass("addtwo");
+		$(this).find(".poke_one").css("transform","rotateY(180deg)");
+		$(this).find(".poke_two").css("transform","rotateY(0)");
 	},function(){
 		$(this).find(".poke_one").css("transform","rotateY(0)");
-		$(this).find(".poke_two").css("transform","rotateY(180deg)");;
+		$(this).find(".poke_two").css("transform","rotateY(180deg)");
 	})
 })
