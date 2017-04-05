@@ -8,8 +8,8 @@
 .top{background:rgba(196,196,0,0.7); -webkit-transform:rotateX(90deg) translateZ(50px);transform:rotateX(90deg) translateZ(50px);}
 .bottom{background:rgba(196,0,196,0.7); -webkit-transform:rotateX(-90deg) translateZ(50px);transform:rotateX(-90deg) translateZ(50px);}
 .wrap{margin:300px; width:200px; height:200px;
- -webkit-perspective:	660px; -webkit-transform-style:preserve-3d; 
-	-webkit-perspective-origin:40px 50%;
+/* -webkit-perspective:	660px; */-webkit-transform-style:preserve-3d; 
+	-webkit-perspective-origin:25% 75%;
     animation:run 5s ease infinite;}
 @keyframes run{
 	0%{transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);transform-origin: center center;}
