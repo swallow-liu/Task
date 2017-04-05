@@ -1,17 +1,18 @@
 	*{margin:0;padding: 0;}
-	html,body{width:100%;}
+	html,body{width:100%;height: 100%;}
 	body{background: url(../image/bg.gif) no-repeat;background-size: 100% 120%;}
-    .main{width:100%;height:660px;}
-    .wrap{width: 150px;height:200px;margin:0 auto;margin-top: 40px;}
+    .main{width:100%;height: 660px;}
+    .wrap{width: 20rem;height:23rem;margin:0 auto;margin-top: 9rem;}
     .content{display:flex;flex:1;justify-content:space-between;}
     /*正面*/
-     .poke_one{background:url(../image/poke.jpg) no-repeat;background-size:100% 100%;width:150px;height:200px;position: absolute;z-index:2;-webkit-transform: rotateY(0);
+     .poke_one{background:url(../image/poke.jpg) no-repeat;background-size:100% 100%;width: 20rem;height:23rem;position: absolute;z-index:2;-webkit-transform: rotateY(0);
 	-moz-transform: rotateY(0);
-	-ms-transform: rotateY(0);}
+	-ms-transform: rotateY(0);
+transform: rotateY(0);}
 	/*反面*/
-	   .poke_two{width:150px;height:200px;background: red;position: absolute;z-index:1;-webkit-transform: rotateY(180deg);
-	-moz-transform: rotateY(180deg);
-	-ms-transform: rotateY(180deg);color:#fff;font-weight: bold;line-height: 200px;text-align: center;font-size: 28px;}
+	   .poke_two{width: 20rem;height:23rem;background: red;position: absolute;z-index:1;-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);color:#fff;font-weight: bold;line-height: 200px;text-align: center;font-size: 4rem;}
     /*准备翻牌*/
        .wrap>div{perspective:200px;-webkit-perspective:200px;-moz-perspective:200px;-ms-perspective:200px;-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
@@ -22,9 +23,13 @@
 	-webkit-transition:0.8s ease-in-out ;
 	-moz-transition:0.8s ease-in-out ;
 	-ms-transition:0.8s ease-in-out ;}
-	.wrap:hover>.poke_one{-webkit-transform: rotateY(180deg);
+	.wrap:hover>.poke_one,.add{-webkit-transform: rotateY(180deg);
 	-moz-transform: rotateY(180deg);
-	-ms-transform: rotateY(180deg);}
-    .wrap:hover>.poke_two{-webkit-transform: rotateY(0);
+	-ms-transform: rotateY(180deg);
+transform: rotateY(180deg);}
+    .wrap:hover>.poke_two,.addtwo{-webkit-transform: rotateY(0);
 	-moz-transform: rotateY(0);
-	-ms-transform: rotateY(0);}
+	-ms-transform: rotateY(0);
+transform: rotateY(0);}
+.newadd{transform: rotateY(0);}
+.newaddtwo{transform: rotateY(180deg);}
