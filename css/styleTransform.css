@@ -5,29 +5,59 @@
     .wrap{width: 15rem;height:20rem;margin:0 auto;margin-top: 3rem;}
     .content{display:flex;flex:1;justify-content:space-between;}
     /*正面*/
-     .poke_one{background:url(../image/poke.jpg) no-repeat;background-size:100% 100%;width: 15rem;height:20rem;position: absolute;z-index:2;-webkit-transform: rotateY(0);
-	-moz-transform: rotateY(0);
-	-ms-transform: rotateY(0);
-transform: rotateY(0);}
+    .poke_one{
+     	background:url(../image/poke.jpg) no-repeat;
+     	background-size:100% 100%;width: 15rem;
+     	height:20rem;
+     	position: absolute;
+     	z-index:2;
+     	-webkit-transform: rotateY(0);
+		-moz-transform: rotateY(0);
+		-ms-transform: rotateY(0);
+		transform: rotateY(0);
+	}
 	/*反面*/
-	   .poke_two{width: 15rem;height:20rem;background: #99cc33;position: absolute;z-index:1;-webkit-transform: rotateY(180deg);
-	-moz-transform: rotateY(180deg);transform: rotateY(180deg);
-	-ms-transform: rotateY(180deg);color:#fff;font-weight: bold;line-height: 20rem;text-align: center;font-size: 3.2rem;}
+	.poke_two{
+		width: 15rem;
+		height:20rem;
+		background: #99cc33;
+		position: absolute;
+		z-index:1;
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+		-ms-transform: rotateY(180deg);
+		color:#fff;
+		font-weight: bold;
+		line-height: 20rem;
+		text-align: center;
+		font-size: 3.2rem;
+	}
     /*准备翻牌*/
-       .wrap>div{perspective:200px;-webkit-perspective:200px;-moz-perspective:200px;-ms-perspective:200px;-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	-ms-transform-style: preserve-3d;
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	-ms-backface-visibility: hidden;
-	-webkit-transition:0.8s ease-in-out ;
-	-moz-transition:0.8s ease-in-out ;
-	-ms-transition:0.8s ease-in-out ;}
-	.wrap:hover>.poke_one{-webkit-transform: rotateY(180deg);
-	-moz-transform: rotateY(180deg);
-	-ms-transform: rotateY(180deg);
-transform: rotateY(180deg);}
-    .wrap:hover>.poke_two{-webkit-transform: rotateY(0);
-	-moz-transform: rotateY(0);
-	-ms-transform: rotateY(0);
-transform: rotateY(0);}
+    .wrap>div{
+    	perspective:200px;
+    	-webkit-perspective:200px;
+    	-moz-perspective:200px;
+    	-ms-perspective:200px;
+    	-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		-ms-transform-style: preserve-3d;
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		-webkit-transition:0.8s ease-in-out ;
+		-moz-transition:0.8s ease-in-out ;
+		-ms-transition:0.8s ease-in-out ;
+	}
+	.wrap:hover>.poke_one{
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+		-ms-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+    .wrap:hover>.poke_two{
+    	-webkit-transform: rotateY(0);
+		-moz-transform: rotateY(0);
+		-ms-transform: rotateY(0);
+		transform: rotateY(0);
+	}
