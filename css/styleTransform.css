@@ -12,7 +12,7 @@ transform: rotateY(0);}
 	/*反面*/
 	   .poke_two{width: 15rem;height:20rem;background: #99cc33;position: absolute;z-index:1;-webkit-transform: rotateY(180deg);
 	-moz-transform: rotateY(180deg);transform: rotateY(180deg);
-	-ms-transform: rotateY(180deg);color:#fff;font-weight: bold;line-height: 200px;text-align: center;font-size: 4rem;}
+	-ms-transform: rotateY(180deg);color:#fff;font-weight: bold;line-height: 20rem;text-align: center;font-size: 3.2rem;}
     /*准备翻牌*/
        .wrap>div{perspective:200px;-webkit-perspective:200px;-moz-perspective:200px;-ms-perspective:200px;-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
