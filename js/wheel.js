@@ -1,5 +1,5 @@
-window.addEventListener('load', function(){
-            var num = 6;   // 奖品数量
+$(function(){
+	      var num = 6;   // 奖品数量
             var canvas = document.getElementById('canvas');
             var btn = document.getElementById('btn');
             if(!canvas.getContext){
@@ -57,19 +57,15 @@ window.addEventListener('load', function(){
 
                 // 恢复前一个状态
                 ctx.restore();
-            }
-	}, false);
+            };
+            $('#btn').click(function(){
+        	    var randommuil = Math.random(1000)*1000+1;
+	   // js实现匀速转动5圈，随后加速，再减速
+	    		$("#canvas").css("transition","all  6s linear");
+	    		setTimeout(function(){
+           		$("#canvas").css("transition","all  6s ease-out");
+            	$("#canvas").css("transform" , "rotate(2780deg)"); 
+	    		},randommuil);  
+        })
+})
 
-    // 抽奖
-    var canvas = document.getElementById('canvas');
-    var btn = document.getElementById('btn');
-    btn.onclick = function(){
-    	  /*随机生成一个毫秒数等待*/
-	    var randommuil = Math.random(1000)*1000+1;
-	    canvas.style.transition="all  6s linear";
-	    setTimeout(function(){
-            canvas.style.transition="all  6s cubic-bezier(0, 0, 0.44, 0.14)";
-            canvas.style.transform = 'rotate(2780deg)'; 
-	    },randommuil);
-    	//点击的时候，用贝塞尔曲线
-    }
